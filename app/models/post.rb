@@ -9,4 +9,9 @@ class Post < ActiveRecord::Base
   def to_s
     title
   end
+
+  has_many :comments
+  #validates :title, presence: true,
+  #                  length: { minimum: 5 }
+  #end
 end
