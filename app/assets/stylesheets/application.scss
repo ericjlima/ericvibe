@@ -14,7 +14,6 @@
 /* ...
 *= require_self
 *= require_tree .
-*= require portfolio
 */
 
 @import "bootstrap-sprockets";
@@ -103,12 +102,12 @@ a{
     margin: 0 0 0 0;
     font-size: 1.35vw;
     color: #fff;
-      & > a{
-        color: inherit;
-        font-size: inherit;
-        vertical-align: middle;
-        margin: 0 3vh 0 0;
-      }
+    & > a{
+      color: inherit;
+      font-size: inherit;
+      vertical-align: middle;
+      margin: 0 3vh 0 0;
+    }
   }
 }
 .eric_content{
@@ -120,6 +119,28 @@ a{
   }
 }
 
+
+.card{
+  float: left;
+  width: 33.333%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+  position: relative;
+  display: block;
+  margin-bottom: .75rem;
+  background-color: #fff;
+  border-radius: .25rem;
+  border: 1px solid rgba(0,0,0,.125);
+  & > a{
+    & > img{
+      height: 280px;
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
 @media all and (orientation:portrait){
   .eric_content {
       width: 100vw;
@@ -128,7 +149,7 @@ a{
   .eric_navHeader{
       margin: 0;
       padding: 2vh 0;
-   
+
       & > h2{
          font-size: 5vw;
      }
