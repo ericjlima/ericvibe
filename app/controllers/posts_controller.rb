@@ -66,7 +66,7 @@ class PostsController < ApplicationController
 
     # some comment that i deleted here talking about ltrustere parameter white lsits or something
     def post_params
-    params.require(:post).permit( :title, :content, :image, :postname)
+      params.require(:post).permit( :title, :content, :image, :postname)
     end
 
 
